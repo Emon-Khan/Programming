@@ -11,20 +11,8 @@ int myfunc(int a, int b){
 }
 int main()
 {
-    vector<int>vec;
-    vector<int>::iterator it;
-
-    vec.push_back(10);
-    vec.push_back(5);
-    vec.push_back(15);
-    vec.push_back(26);
-    vec.push_back(12);
-    //sort(vec.begin(), vec.end(), myfunc);
-    sort(vec.begin(), vec.begin() + 3, myfunc);
-
-    for(it = vec.begin(); it != vec.end(); it++){
-        cout << *it << "\t";
-    }
-
+    string str="abcd";
+    string str1="efgh";
+    str = str+str1;
     return 0;
 }

@@ -28,7 +28,7 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 52, 6, 7, 1, 9, 5 };
+        int[] arr = { 52, 6, 7, 1, 9, 3 };
         QuickSort obj = new QuickSort();
         int[] ans = obj.sort(arr, 0, arr.length - 1);
         for (int i = 0; i < ans.length; i++) {
