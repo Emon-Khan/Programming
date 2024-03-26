@@ -7,6 +7,7 @@ public class SecondLargest {
         int t, n;
         Scanner scan = new Scanner(System.in);
         t = scan.nextInt();
+        scan.nextLine();
         for (int i = 0; i < t; i++) {
             n = scan.nextInt();
             int[] arr = new int[n];

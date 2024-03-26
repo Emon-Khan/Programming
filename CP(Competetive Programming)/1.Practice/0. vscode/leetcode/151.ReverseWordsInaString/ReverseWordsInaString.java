@@ -8,6 +8,7 @@ public class ReverseWordsInaString {
         str = scan.nextLine();
         String ans = reverseWords(str);
         System.out.println(ans);
+        scan.close();
     }
 
     public static String reverseWords(String str) {
@@ -16,7 +17,7 @@ public class ReverseWordsInaString {
         for (int index = vec.size() - 1; index >= 0; index--) {
             // System.out.println(ans.get(index).x + " " + ans.get(index).y);
             int i = vec.get(index).x;
-            int j = vec.get(index).y;
+            int j = vec.get(index).y; // {(0, 2), (4,6)}
             while (i <= j) {
                 s.append(str.charAt(i));
                 i++;

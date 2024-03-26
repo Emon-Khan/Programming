@@ -10,6 +10,7 @@ public class SecondLargestDigit {
         //System.out.println(str);
         int ans = secondHighest(str);
         System.out.println(ans);
+        scan.close();
     }
 
     public static int secondHighest(String s) {

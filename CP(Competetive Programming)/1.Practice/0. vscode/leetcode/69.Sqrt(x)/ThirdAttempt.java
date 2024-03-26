@@ -21,6 +21,7 @@ public class ThirdAttempt {
             ans = e;
         }
         System.out.println(ans);
+        scanner.close();
     }
 
 }

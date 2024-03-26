@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
-import java.util.*;
 
 public class sqrtX {
     public static void main(String[] args) {
@@ -11,6 +8,7 @@ public class sqrtX {
         sqrtX obj = new sqrtX();
         int ans = obj.mySqrt(x);
         System.out.println(ans);
+        scan.close();
     }
 
     public int mySqrt(int x) {
