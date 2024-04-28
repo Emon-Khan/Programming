@@ -1,6 +1,5 @@
 public class Sort_An_Array {
     int[] merge(int arr[], int s, int m, int e) {
-        //int[] ans = arr;
         int n1 = m - s + 1;
         int n2 = e - m;
 
@@ -40,7 +39,6 @@ public class Sort_An_Array {
     }
 
     int[] sort(int arr[], int s, int e) {
-        //int[] ans = arr;
         if (s < e) {
             int m = s + (e - s) / 2;
             sort(arr, s, m);
