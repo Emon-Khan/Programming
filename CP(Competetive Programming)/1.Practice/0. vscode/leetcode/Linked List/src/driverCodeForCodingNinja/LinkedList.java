@@ -1,33 +1,33 @@
-package DriverCode;
+package driverCodeForCodingNinja;
 
 public class LinkedList {
-    public ListNode head;
+    public Node head;
 
 
     public int size() {
-    	ListNode n = head;
+    	Node n = head;
     	int count = 1;
     	while(n.next!=null) {
     		count++;
-    		n=n.next;
+    		n=(Node) n.next;
     	}
     	return count;
     }
     public void insert(int data) {
-        ListNode listNode = new ListNode(data);
+        Node listNode = new Node(data);
         if (head == null) {
             head = listNode;
         } else {
-            ListNode n = head;
+            Node n = head;
             while (n.next != null) {
-                n = n.next;
+                n = (Node) n.next;
             }
             n.next = listNode;
         }
     }
 
     public void insertAtStart(int data) {
-        ListNode nias = new ListNode(data);
+        Node nias = new Node(data);
         nias.next = head;
         head = nias;
     }
@@ -36,10 +36,10 @@ public class LinkedList {
         if (index == 1) {
             insertAtStart(data);
         } else {
-            ListNode ni = new ListNode(data);
-            ListNode node = head;
+            Node ni = new Node(data);
+            Node node = head;
             for (int i = 1; i < index - 1; i++) {
-                node = node.next;
+                node = (Node) node.next;
             }
             ni.next = node.next;
             node.next = ni;
@@ -47,31 +47,31 @@ public class LinkedList {
     }
 
     public void delete(int index) {
-        ListNode node = head;
+        Node node = head;
         if (index == 1) {
-            head = node.next;
+            head = (Node) node.next;
         } else {
             for (int i = 1; i < index - 1; i++) {
-                node = node.next;
+                node = (Node) node.next;
             }
             node.next = node.next.next;
         }
     }
 
     public void display() {
-        ListNode node = head;
+        Node node = head;
         while (node != null) {
             System.out.println(node.data);
-            node = node.next;
+            node = (Node) node.next;
         }
         //System.out.println(node.data);
     }
 
-    public void display(ListNode head) {
-        ListNode node = head;
+    public void display(Node head) {
+        Node node = head;
         while (node != null) {
             System.out.println(node.data);
-            node = node.next;
+            node = (Node) node.next;
         }
     }
 }

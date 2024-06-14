@@ -1,11 +1,10 @@
+package firstTry;
 import DriverCode.LinkedList;
 import DriverCode.ListNode;
 
 public class MiddleOfTheLinkedList {
-//    public static ListNode head;
 
     public static void main(String[] args) {
-        MiddleOfTheLinkedList objMiddleLinkedList = new MiddleOfTheLinkedList();
         LinkedList objLinkedList = new LinkedList();
         objLinkedList.insert(1);
         objLinkedList.insert(2);
