@@ -486,3 +486,11 @@ const sortedRecommendedFood = dogs
   .slice()
   .sort((a, b) => a.recommondedFood - b.recommondedFood);
 console.log(sortedRecommendedFood);
+
+const array = [2, 7, 19, 23];
+const newArray = array.filter(arr => (arr % 2 ? true : false));
+console.log(newArray);
+const nArray = array
+  .reduce((acc, val) => [...acc, val % 2 ? val : null], [])
+  .filter(el => el != null);
+console.log(nArray);
