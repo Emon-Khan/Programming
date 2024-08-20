@@ -1,0 +1,11 @@
+<app-header (typeSelect)="onNavigate($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes *ngIf="selectedType === 'recipe'"></app-recipes>
+      <app-shopping-list
+        *ngIf="selectedType === 'shopping-list'"
+      ></app-shopping-list>
+    </div>
+  </div>
+</div>

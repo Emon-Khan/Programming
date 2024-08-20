@@ -1,0 +1,8 @@
+<div class="container">
+  <app-game-control
+    (startGame)="onStartGameFired($event)"
+    (stopGame)="onPauseGameFired()"
+  ></app-game-control>
+  <app-even *ngFor="let num of even" [element]="num"></app-even>
+  <app-odd *ngFor="let num of odd" [element]="num"></app-odd>
+</div>
