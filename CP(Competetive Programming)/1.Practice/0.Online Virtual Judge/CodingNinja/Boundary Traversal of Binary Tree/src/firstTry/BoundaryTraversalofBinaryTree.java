@@ -43,8 +43,9 @@ public class BoundaryTraversalofBinaryTree {
 		 * null, null, 58, 9, null, null, null
 		 */
 
-		List<Integer> list = Arrays.asList(10, 5, 20, 3, 8, 18, 25, null, null, 7, null, null, null, null, null, null,
-				null);
+		List<Integer> list = Arrays.asList(32, 20, 31, 38, 22, 19, 18, 33, 12, 44, 41, 10, 27, null, 37, null, 7, null,
+				null, null, null, 43, null, 1, null, null, 23, null, null, null, null, null, null, 21, 29, 30, null, 5,
+				null, null, null, null, null, null, null);
 		int i = 0;
 		if (list.get(i) != null) {
 			obj.head = new TreeNode(list.get(i));
