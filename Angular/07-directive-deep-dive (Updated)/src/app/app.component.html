@@ -1,0 +1,12 @@
+<main>
+  <app-learning-resources />
+
+  <hr />
+
+  <app-auth />
+  <!-- <ng-template appAuth="admin"> -->
+  <p *appAuth="'admin'" appLog>Only Admin can see this message</p>
+  <p *appAuth="'user'">Only User can see this message</p>
+  <p *appAuth="'guest'">Only guest user can see this message</p>
+  <!-- </ng-template> -->
+</main>
