@@ -1,6 +1,5 @@
 package firstTry;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -37,7 +36,7 @@ public class BinaryTreeLevelOrderTraversal {
 		Queue<TreeNode> queue = new LinkedList<TreeNode>();
 //		if(head2==null)return twoDArray;
 		queue.offer(head2);
-		while (!queue.isEmpty() && queue.peek()!=null) {
+		while (!queue.isEmpty() && queue.peek() != null) {
 			int size = queue.size();
 			List<Integer> subArray = new LinkedList<Integer>();
 			for (int i = 0; i < size; i++) {
